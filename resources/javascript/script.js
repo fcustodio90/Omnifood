@@ -89,6 +89,16 @@ $(document).ready(function() {
       nav.slideToggle(200);
     })
 
+    $(window).resize(function(){
+      var nav = $('.js-main-nav');
+
+      if ($(window).width() > 767){
+        nav.css("display", "block");
+      } else {
+        nav.css("display", "none");
+      }
+    });
+
 });
 
 
